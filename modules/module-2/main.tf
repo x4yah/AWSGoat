@@ -131,7 +131,7 @@ resource "aws_security_group" "database-security-group" {
 resource "aws_db_instance" "database-instance" {
   identifier             = "aws-goat-db"
   allocated_storage      = 10
-  instance_class         = "db.t3.micro"
+  instance_class         = "db.t4g.micro"
   engine                 = "mysql"
   engine_version         = "8.0"
   username               = "root"
